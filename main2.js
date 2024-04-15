@@ -1,21 +1,50 @@
-// Recoger la información 
-function getinfo(){
-    // Devuelve el texto
-    console.log('texto ingresado')
-    return 'text ingresado'
+document.addEventListener('DOMContentLoaded',function(){
+    showInfo();
+})
+document.getElementById('btn-add-nota').addEventListener('click', function(){
+    getInfo(nota)
+    setLocalInfo(nota)
+    showInfo()
+})
+document.getElementById('btn-clean-nota').addEventListener('click', function(){
+    cleanInfo()
+    showInfo()
+})
+// recoger la información
+function getInfo(){
+    // capturamos lo que el usuario introduce
+    let nota = document.getElementById('nota').innerHTML
+    console.log(nota)
+    return nota
 }
-// Almacenarla en localStorage
-function setLocalInfo(){
-    // Guardar la info en localStorage
-    return true;
+// alamacenarla en localStorage
+function setLocalInfo(nota){
+    // guardaría la info en localStorage
+    const clave = Date.now();
+  localStorage.setItem(clave,getInfo(nota))
 }
-    function showInfo(){
-    // Leerla y mostrarla por pantalla
-    // Sino hay notas mostrar no hay nada
-        return true;
+// leerla y sacarla por pantalla
+function showInfo(){
+    // leerla y mostrarla por pantalla
+    //  sino hay notas mostra no hay nada
+    // limpiamos la pantalla
+    document.getElementById('show-notas').innerHTML= ''
+    for (let index = 0; index < localStorage.length; index++) {
+        let clave = localStorage.key(index)
+        let valor = localStorage[clave]
+        console.log(valor)
+        let elemento = `
+        <div class='lista-notas'>
+        ${valor}
+        </div>
+        `
+        document.getElementById('show-notas').innerHTML+= elemento
     }
-    // Limpiarla
-
-    function cleanInfo(){
-        // Limpiar el localStorage y limpiar en la pantalla
-    }
+}
+// limpiarla
+function cleanInfo(){
+    // limpiar el local storage y limpiar la pantaal
+    // Elimina todos los elementos
+localStorage.clear();
+    console.log('En localstorage no hay notas')
+}

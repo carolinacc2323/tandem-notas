@@ -1,8 +1,12 @@
-![Logotipo tandem](https://i.pinimg.com/originals/37/47/92/374792896d21b205174c157f5149f13c.jpg)
-# El nombre del proyecto o software
-Versión: La versión actual del proyecto o software.
-Autor(es): Los nombres de las personas o equipos responsables del proyecto o software.
-Licencia: ""La licencia bajo la cual se distribuye el proyecto o software.""
+<!-- ![Logotipo tandem](https://i.pinimg.com/originals/37/47/92/374792896d21b205174c157f5149f13c.jpg) -->
+# Tandem Notas
+
+- Versión: 0.1
+- Autor: Carolina
+- Licencia: MIT
+
+<image src="level.jpg">
+
 ## Índice
 1. [Descripción general](#descripción-general)
 2. [Instruccciones de instalación ](#instrucciones-de-instalación)
@@ -16,16 +20,28 @@ Licencia: ""La licencia bajo la cual se distribuye el proyecto o software.""
 
 
 ## Descripción general
-Una breve descripción del propósito del proyecto o software.
-Las funcionalidades y características principales del proyecto o software.
-La audiencia objetivo del proyecto o software.
+Esta aplicación tiene como intención administrar notas en un equipo cliente y consultarlas más tarder.
 
 ## Instrucciones de instalación
-**Requisitos previos:** Cualquier software o hardware necesario para ejecutar el proyecto o software.
+Descarga el zip de la siguiente url: [enlace a github](https://github.com/carolinacc2323/tandem-notas.git) o en el shell haz un git clone.
+```shell
 
-**Pasos de instalación:** Instrucciones paso a paso sobre cómo instalar el proyecto o software.
+git clone https://github.com/carolinacc2323/tandem-notas.git
+```
+Una vez descargado incluyelo en un repositorio y ejecutalo a través de un navegador.
+```
+https://localhost:3000/tandemnotas
+```
 
-**Opciones de instalación:** Opciones avanzadas de instalación para usuarios experimentados.
+## Tecnologías utilizadas en 
+
+**Html, css y js**.
+
+![Ícono-html](./html.svg)
+
+![Ícono-css](./css.svg)
+
+![Ícono-js](./js.svg)
 
 ## Instrucciones de uso
 **Información básica:** 
@@ -36,11 +52,13 @@ Ejemplos de cómo usar el proyecto o software para realizar tareas comunes.
 Casos de uso: Casos de uso más avanzados del proyecto o software.
 
 ## Solución de problemas
-Problemas comunes: Una lista de problemas comunes que los usuarios pueden encontrar y cómo solucionarlos.
+- si no hay una nota disponible aparecerá un mensaje "no hay notas disponibles".
+- El botón está deshabilitado si no se edita la nota
+- Se eliminarán las notas individuales en una futura versión.
 
+[carolinacc2323.tandem@gmail.com](emailto:carolicc2323.tandem@gmail.com)
 
-
-Recursos de soporte: Enlaces a documentación adicional, foros comunitarios o canales de soporte.
+[Teléfono](tel:+345282)
 
 [Documentación](https://docs.google.com/document/d/1T2KdLUjJqNpzT0K6MapjdUoqMrWNWylQGpylKEss5HQ/edit)
 
@@ -57,7 +75,15 @@ Agradecimientos a las personas o equipos que han contribuido al proyecto.
 
 
 ## Apéndices
-Información adicional: Cualquier información adicional que no encaje en las secciones anteriores, como documentación técnica, glosarios o listas de recursos.
+Más información en nuestro gitgub:
+[Carolina](https://github.com/carolinacc2323/tandem-notas)
+
+## Versiones
+|version|fecha|cambios|
+
+|--||--||--|
+
+|0.1||17/04/2024||Funcionalidad básica|
 
 ## Tabla de software
 | Software  | dificultad |

@@ -7,4 +7,25 @@ body{
     width: 200px;
     height: 200px;
     padding: 0.5em;
+    margin-left: 50em;
+}
+.lista-notas{
+    border: solid 0.1em gray;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    padding: 0.5em;
+}
+#show-notas{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#btn-add-nota{
+    width: 50px;
+}
+#btn-clean-nota{
+    grid-area: bton;
 }
